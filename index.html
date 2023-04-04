@@ -1,4 +1,4 @@
-<html lang="fr">
+<html lang="fr" data-theme="light">
     <head>
         <title>Site de Yatsuu</title>
         <meta charset="utf-8">
@@ -6,8 +6,12 @@
         <link rel="stylesheet" type="text/css" href="./css/index.css">
     </head>
     <body>
+
+        <!-- En-tête de page -->
         <header>
             <h1>Yatsuu</h1>
+
+            <!-- Menu des boutons pour changer de page -->
             <nav>
                 <ul>
                     <li><a href="#">Accueil</a></li>
@@ -16,16 +20,29 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Checkbox pour activer/désactiver le darkmode -->
+            <div class="toggle-container">
+                <span>Mode sombre :</span>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </header>
+
+        <!-- Partie principale de la page -->
         <main>
             <section>
                 <h2>Bienvenue sur le site de Yatsuu</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor diam eu ipsum pulvinar, quis sollicitudin nisi feugiat. Nam fermentum mauris et justo malesuada ultrices. In hac habitasse platea dictumst.</p>
-                <a href="#">En savoir plus</a>
             </section>
         </main>
+
+        <!-- Pied de page -->
         <footer>
-            <p>Droit d'auteur © 2023 Yatsuu. Tous droits réservés.</p>
+            <p>Copyright &copy; Yatsuu - <script src="./js/script.js"></script> - All Rights Reserved</p>
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>
