@@ -5,7 +5,8 @@ document.write(new Date().getFullYear());
 const toggleSwitch = document.querySelector('#darkModeToggle');
 const body = document.querySelector('body');
 const header = document.querySelector('header');
-const mainSection = document.querySelector('main section');
+const mainSectionA = document.querySelector('main section .prespers');
+const mainSectionB = document.querySelector('main section .prespro');
 const nav = document.querySelector('nav');
 const navA = document.querySelector('header nav');
 const hspan = document.querySelector('header div span');
@@ -16,7 +17,8 @@ const currentTheme = localStorage.getItem('theme');
 if (currentTheme == 'dark') {
   toggleSwitch.checked = true;
   body.classList.add('dark-mode');
-  mainSection.classList.add('dark-mode');
+  mainSectionA.classList.add('dark-mode');
+  mainSectionB.classList.add('dark-mode');
   header.classList.add('dark-mode');
   nav.classList.add('dark-mode');
   navA.classList.add('dark-mode');
@@ -29,7 +31,8 @@ toggleSwitch.addEventListener('change', function() {
     if(this.checked) {
         localStorage.setItem('theme', 'dark');
         body.classList.add('dark-mode');
-        mainSection.classList.add('dark-mode');
+        mainSectionA.classList.add('dark-mode');
+        mainSectionB.classList.add('dark-mode');
         header.classList.add('dark-mode');
         nav.classList.add('dark-mode');
         navA.classList.add('dark-mode');
@@ -38,7 +41,8 @@ toggleSwitch.addEventListener('change', function() {
     } else {
         localStorage.removeItem('theme');
         body.classList.remove('dark-mode');
-        mainSection.classList.remove('dark-mode');
+        mainSectionA.classList.remove('dark-mode');
+        mainSectionB.classList.remove('dark-mode');
         header.classList.remove('dark-mode');
         nav.classList.remove('dark-mode');
         navA.classList.remove('dark-mode');
