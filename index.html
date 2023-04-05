@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="shortcut icon" type="image/png" href="./assets/images/logo.png">
     </head>
     <body>
 
@@ -14,9 +15,9 @@
             <!-- Menu des boutons pour changer de page -->
             <nav>
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Fiches</a></li>
                     <li><a href="./about.html">À propos</a></li>
-                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./services.html">Service</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -29,24 +30,50 @@
                     <span class="slider"></span>
                 </label>
             </div>
+
         </header>
 
         <!-- Partie principale de la page -->
         <main>
-            <section>
-                <h1>Fiche profil</h1>
-                <p class="languages-prés">
-                    Je suis une développeuse expérimentée dans les langages du WEB : JavaScript - HTML - CSS - PHP.<br>
-                    Je maîtrise également le TypeScript pour le back-end qui remplace assez souvent le JS dans mes projets.<br>
-                    Comme autre langage, je maîtrise le Python, les langages C (C++ - C#) ainsi que du Docker.<br>
-                    Comme bonne développeuse, je sais également manipuler les bases de données MySQL, MongoDB et MariaDB.
-                </p>
-                <p class="proj-prés">
-                    À travers le temps, j'ai pu acquérir de l'expérience grâce à bon nombre de projets.<br>
-                    Parmi les projets que j'ai menés, on peut y trouver plusieurs sites internet dont celui-ci qui n'est pas une référence.<br>
-                    On retrouve également des programmes comme un Pong, un robot Discord qui sera développé dans une autre section du site, <br>ainsi que d'autres projets qui utilisent des API de jeux-vidéos.
-                </p>
+            <!-- Section générale -->
+            <section class="g">
+
+                <!-- Section de présentation personnelle (prespers) dans la section générale -->
+                <section class="prespers">
+                    <h1>Fiche personnelle</h1>
+                    <p class="prés">
+                        Je suis Yatsuu, développeur ainsi qu'un grand joueur de jeux-vidéos.<br>
+                        Je suis un grand joueur des jeux : Minecraft - GenshinImpact - Ori - Horizon - Animal Crossing - Pokemon.<br>
+                        Mes deux grands coups de cœur du moment sont GenshinImpact et Ori.<br>
+                        Si un jour, vous voulez que l'on joue, vous avez mon Discord-Tag dans la rubrique "À propos".
+                        <br><br>
+                        Je suis également un grand passionné de l'animation japonaise et du chara-design.<br>
+                        Si possible dans le futur, je souhaite pouvoir être en mesure pour vivre là-bas.
+                    </p>
+                </section>
+
+                <!-- Section de présentation pro (prespro) dans la section générale -->
+                <section class="prespro">
+                    <h1>Fiche pro</h1>
+                    <p class="pro">
+                        Je suis un développeur expérimenté dans les langages du WEB : JavaScript - HTML - CSS - PHP.<br>
+                        Je maîtrise également le TypeScript pour le back-end qui remplace assez souvent le JS dans mes projets.<br>
+                        Comme autre langage, je maîtrise le Python, les langages C (C++ - C#) ainsi que du Docker.<br>
+                        Comme bon développeur, je sais également manipuler les bases de données MySQL, MongoDB et MariaDB.
+                        <br><br>
+                        À travers le temps, j'ai pu acquérir de l'expérience grâce à bon nombre de projets.<br>
+                        Parmi les projets que j'ai menés, on peut y trouver plusieurs sites internet dont celui-ci qui n'est pas une référence.<br>
+                        On retrouve également des programmes comme un Pong, un robot Discord qui sera développé dans une autre section du site, <br>ainsi que d'autres projets qui utilisent des API de jeux-vidéos.
+                    </p>
+                </section>
+
+                <!-- Class pour la photo de profil -->
+                <div class="profil-image">
+                    <img src="./assets/images/pdp.png">
+                </div>
+
             </section>
+
         </main>
 
         <!-- Pied de page -->
@@ -54,5 +81,6 @@
             <p>Copyright &copy; Yatsuu - <script src="./js/script.js"></script> - All Rights Reserved</p>
         </footer>
         <script src="./js/script.js"></script>
+
     </body>
 </html>
