@@ -7,6 +7,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    background-image: url('../assets/images/font.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /* Styles pour l'en-tête */
@@ -73,16 +77,26 @@ main {
 section {
     text-align: center;
     margin-bottom: 30px;
+    background-color: rgba(145, 145, 145, 0.4);
 }
 
-section h2 {
+section h1 {
     font-size: 48px;
     margin-top: 0;
+    text-decoration: underline;
+    color: red;
 }
 
-section p {
+section p.languages-prés {
     font-size: 18px;
     line-height: 1.5;
+    color: dark;
+}
+
+section p.proj-prés {
+    font-size: 18px;
+    line-height: 1.5;
+    color: dark;
 }
 
 a.cta-button {
@@ -146,7 +160,7 @@ body.dark-mode {
 }
 
 section.dark-mode {
-    background-color: #333;
+    background-color: rgba(51,51,51, 0.6);
     color: #fff;
 }
 
