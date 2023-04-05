@@ -1,19 +1,22 @@
-/* Importation de la police d'écriture */
+/* 
+        Importation de la police d'écriture 
+*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-/* Styles pour le corps de la page */
+/* 
+        Styles pour le corps de la page 
+*/
 body {
     font-family: Raleway, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    background-image: url('../assets/images/font.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    
 }
 
-/* Styles pour l'en-tête */
+/* 
+        Styles pour l'en-tête 
+*/
 header {
     background-color: #fff;
     color: #333;
@@ -35,6 +38,9 @@ header span {
     background-color: #fff;
 }
 
+/* 
+        Styles de la barre de navigation
+*/
 nav ul {
     list-style: none;
     margin: 0;
@@ -65,58 +71,96 @@ nav a:hover {
     border-bottom: 1px solid #000;
 }
 
-/* Styles pour la section principale */
+/* 
+        Styles pour la main class
+*/
 main {
     padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('../assets/images/font.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-section {
+/* 
+        Styles pour toute la "section" entière
+*/
+
+/* 
+        Styles pour la section "presentation"
+*/
+section.prespers {
+    background-color: rgba(145, 145, 145, 0.6);
     text-align: center;
     margin-bottom: 30px;
-    background-color: rgba(145, 145, 145, 0.4);
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
 }
 
-section h1 {
+section.prespers h1 {
     font-size: 48px;
     margin-top: 0;
     text-decoration: underline;
     color: red;
 }
 
-section p.languages-prés {
+section .prespers p {
     font-size: 18px;
     line-height: 1.5;
-    color: dark;
+    color: white;
+    padding: 10px;
 }
 
-section p.proj-prés {
+/*
+        Styles pour la section "prespro"
+*/
+section .prespro {
+    background-color: rgba(145, 145, 145, 0.6);
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 1.5;
-    color: dark;
+    color: white;
 }
 
-a.cta-button {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #0077cc;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+section.prespro h1 {
     text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
+    font-size: 48px;
+    margin-top: 0;
+    text-decoration: underline;
+    color: red;
 }
 
-a.cta-button:hover {
-    background-color: #005fa3;
+section.prespro p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    padding: 10px;
 }
 
-/* Styles pour le pied de page */
+/* 
+Styles pour la photo de profil 
+*/
+.profil-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.profil-image img {
+    max-width: 20%;
+    height: auto;
+}
+
+/* 
+        Styles pour le pied de page 
+*/
 footer {
     background-color: #919191;
     color: #fff;
@@ -129,7 +173,9 @@ footer p {
     font-size: 16px;
 }
 
-/* Responsive */
+/* 
+        Responsive 
+*/
 @media only screen and (max-width: 768px) {
     header {
         flex-direction: column;
@@ -146,9 +192,15 @@ footer p {
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    .profil-image img {
+        max-width: 75%;
+    }
 }
 
-/* data theme */
+/* 
+        data theme 
+*/
 html[data-theme="dark"] {
     background-color: #333;
     color:dark;
